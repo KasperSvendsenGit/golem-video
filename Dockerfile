@@ -77,7 +77,6 @@ RUN apt-get install -y \
     # Compile.
  RUN   cd HandBrake && \
                 ./configure --prefix=/usr \
-                --debug=$HANDBRAKE_DEBUG_MODE \
                 --disable-gtk-update-checks \
                 --enable-fdk-aac \
                 --enable-x265 \
